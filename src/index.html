@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div class="workers-container">
+  <div class="content-container">
+    <table>
+      <thead>
+      <tr>
+        <th></th>
+        <th>№</th>
+        <th>Имя</th>
+        <th>Должность</th>
+        <th>Устроился</th>
+        <th>Департамент</th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="right-menu-container">
+    <form class="search-container item">
+      <h1>Поиск</h1>
+
+      <label>
+        ID
+        <input type="number" name="id">
+      </label>
+      <label>
+        Имя
+        <input type="text" name="name">
+      </label>
+
+      <div class="actions">
+        <button name="reset" type="reset">Сбросить</button>
+        <button type="submit">Найти</button>
+      </div>
+    </form>
+    <div class="actions-container item hidden">
+      <h1>Действия</h1>
+      <button type="button" class="delete-workers-button">Удалить <span class="count-workers">0 рабочих</span></button>
+    </div>
+    <form class="create-container item">
+      <h1>Создание</h1>
+
+      <label>
+        Имя
+        <input type="text" required name="name">
+      </label>
+      <label>
+        Должность
+        <input type="text" required name="position">
+      </label>
+      <label>
+        Устроился
+        <input type="date" required name="register">
+      </label>
+      <label>
+        Департамент
+        <input type="text" required name="department">
+      </label>
+
+      <div class="actions">
+        <button type="submit">Создать</button>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>
